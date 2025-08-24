@@ -1,0 +1,8 @@
+- name: cleanup
+  taskSpec:
+    steps:
+      - name: cleanup
+        image: alpine
+        script: |
+          #!/bin/sh
+          rm -rf /workspace/source/tmp || true
